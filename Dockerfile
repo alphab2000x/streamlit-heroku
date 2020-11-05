@@ -4,9 +4,7 @@ WORKDIR /usr/src/app
 COPY . .
 RUN apt-get -y update
 
-RUN apt install snapd \
-&& snap install heroku --classic
-&& apt-get -y install python3 \
+RUN apt-get -y install python3 \
 && apt-get -y install python3-pip \
 && apt-get install -y git \
 && apt-get install -y vim \
